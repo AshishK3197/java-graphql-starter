@@ -1,0 +1,10 @@
+#type Book is the data Type for which the GraphQl will look for.
+type Book{
+    title: String!
+    isbn: String!
+}
+
+#Query will contain all the get calls , fetching data through GET.
+type Query{
+    getBook(isbn:String!): Book
+}
